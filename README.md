@@ -20,7 +20,7 @@ CREATE TABLE table_b (
 insert into table_a (id, name) values ('ab6981ee-02e8-4d3c-87a1-08d45ebd8b03', 'test');
 insert into table_b (id, a_id) values ('5ac8367d-702e-4eff-b3fe-edfd9490c967', null);
 ```
-3. Deploy the datamodel
+3. Start the container and deploy the datamodel
 4. Run the following query
 ```graphql
 query {
