@@ -1,0 +1,9 @@
+type TableA @pgTable(name: "table_a") {
+    id:             UUID! @unique
+    name:           String!
+}
+
+type TableB @pgTable(name: "table_b") {
+    id:             UUID! @unique
+    a:              TableA @pgRelation(column: "a_id")
+}
